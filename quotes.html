@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quotes</title>
+<link rel="stylesheet" type="text/css" href="quotes.css">
+</head>
+
+
+<body>
+
+<div class="Quotes1" >
+		<button class="btn" onclick="generate()">Generate Quotes</button>
+		
+				<blockquote id="Quotes"> </blockquote>
+</div>
+
+<!-----------------------------------------------JS start----------------------->
+<script type="text/javascript">
+	var quote=[
+{
+	q1:"u can and u will"
+},
+{
+	q1:"Be yourself; everyone else is already taken."
+},
+
+{
+	q1:"Two things are infinite: the universe and human stupidity; and I'm not sure about the universe."
+},
+{
+	q1:"You only live once, but if you do it right, once is enough."
+}
+
+	];
+
+	function generate(){
+		var random = quote[ Math.floor(Math.random()* quote.length)];
+		document.getElementById("Quotes").innerHTML=  random.q1;
+	}
+
+
+</script>
+</body>
+</html>
